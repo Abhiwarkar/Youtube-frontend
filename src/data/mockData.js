@@ -1,0 +1,247 @@
+// Mock data with CORS-friendly sources - BEST SOLUTION
+
+export const categories = [
+  'All',
+  'Technology',
+  'Education', 
+  'Design',
+  'Gaming',
+  'Music',
+  'Sports',
+  'News',
+  'Entertainment',
+  'Science',
+  'Travel',
+  'Cooking'
+];
+
+export const mockChannels = [
+  {
+    channelId: 'ch1',
+    name: 'CodeMaster',
+    avatar: 'https://i.pravatar.cc/150?img=1',
+    subscribers: 245000,
+    description: 'Learn programming with practical examples and real-world projects.',
+    verified: true
+  },
+  {
+    channelId: 'ch2',
+    name: 'DevTips',
+    avatar: 'https://i.pravatar.cc/150?img=2',
+    subscribers: 156000,
+    description: 'Web development tutorials and tips for modern developers.',
+    verified: true
+  },
+  {
+    channelId: 'ch3',
+    name: 'FullStack Academy',
+    avatar: 'https://i.pravatar.cc/150?img=3',
+    subscribers: 89000,
+    description: 'Complete courses on full-stack development and programming.',
+    verified: false
+  }
+];
+
+export const mockVideos = [
+  {
+    videoId: 'vid1',
+    title: 'Learn React in 15 Minutes - Complete Beginner Guide',
+    uploader: 'CodeMaster',
+    description: 'A comprehensive guide to getting started with React. Learn components, state, props, and more in this beginner-friendly tutorial. Perfect for developers who want to quickly understand React fundamentals.',
+    views: 152000,
+    likes: 3400,
+    dislikes: 45,
+    uploadDate: '2024-01-15',
+    duration: '15:30',
+    category: 'Technology',
+    // Google's sample videos - CORS-friendly and always work
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=1',
+    comments: [
+      {
+        commentId: 'c1',
+        author: 'DevLearner',
+        text: 'Great tutorial! Really helped me understand React concepts.',
+        timestamp: '2024-01-16T10:30:00Z',
+        likes: 12
+      }
+    ]
+  },
+  {
+    videoId: 'vid2',
+    title: 'MongoDB Crash Course - Build 5 Projects',
+    uploader: 'DevTips',
+    description: 'Master MongoDB by building 5 real-world projects. Learn NoSQL database design, queries, and best practices for modern web applications.',
+    views: 79000,
+    likes: 2100,
+    dislikes: 32,
+    uploadDate: '2024-01-10',
+    duration: '1:35:20',
+    category: 'Education',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=2',
+    comments: []
+  },
+  {
+    videoId: 'vid3',
+    title: 'What Is GraphQL? - Database Query Language Explained',
+    uploader: 'FullStack Academy',
+    description: 'Understanding GraphQL and how it differs from REST APIs. Learn when and why to use GraphQL in your projects with practical examples.',
+    views: 112000,
+    likes: 2800,
+    dislikes: 28,
+    uploadDate: '2024-01-08',
+    duration: '38:20',
+    category: 'Technology',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=3',
+    comments: []
+  },
+  {
+    videoId: 'vid4',
+    title: 'CSS Grid vs Flexbox - Complete Guide',
+    uploader: 'CodeMaster',
+    description: 'When to use CSS Grid vs Flexbox? Learn the differences and see practical examples of both layout systems in modern web development.',
+    views: 68000,
+    likes: 1900,
+    dislikes: 15,
+    uploadDate: '2024-01-05',
+    duration: '28:30',
+    category: 'Design',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=4',
+    comments: []
+  },
+  {
+    videoId: 'vid5',
+    title: 'AWS Cloud Computing Fundamentals',
+    uploader: 'MobileDev',
+    description: 'Get started with Amazon Web Services. Learn about EC2, S3, RDS, and other core AWS services for modern cloud applications.',
+    views: 198000,
+    likes: 4200,
+    dislikes: 67,
+    uploadDate: '2024-01-03',
+    duration: '3:22:45',
+    category: 'Technology',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=5',
+    comments: []
+  },
+  {
+    videoId: 'vid6',
+    title: 'JavaScript ES6 Features You Must Know',
+    uploader: 'DevTips',
+    description: 'Master modern JavaScript with ES6 features: arrow functions, destructuring, modules, and more essential concepts for modern development.',
+    views: 245000,
+    likes: 5800,
+    dislikes: 92,
+    uploadDate: '2024-01-01',
+    duration: '45:20',
+    category: 'Technology',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=6',
+    comments: []
+  },
+  {
+    videoId: 'vid7',
+    title: 'Node.js Backend Development Tutorial',
+    uploader: 'FullStack Academy',
+    description: 'Build a complete backend API with Node.js and Express. Learn authentication, database integration, and deployment best practices.',
+    views: 156000,
+    likes: 3900,
+    dislikes: 48,
+    uploadDate: '2023-12-28',
+    duration: '2:15:30',
+    category: 'Education',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=7',
+    comments: []
+  },
+  {
+    videoId: 'vid8',
+    title: 'UI/UX Design Principles - Complete Course',
+    uploader: 'DesignMaster',
+    description: 'Learn the fundamentals of user interface and user experience design. From wireframes to prototypes and user testing.',
+    views: 89000,
+    likes: 2400,
+    dislikes: 31,
+    uploadDate: '2023-12-25',
+    duration: '1:42:15',
+    category: 'Design',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=8',
+    comments: []
+  },
+  {
+    videoId: 'vid9',
+    title: 'Python Machine Learning for Beginners',
+    uploader: 'DataScience Pro',
+    description: 'Introduction to machine learning with Python. Learn scikit-learn, pandas, and build your first ML model from scratch.',
+    views: 201000,
+    likes: 5200,
+    dislikes: 78,
+    uploadDate: '2023-12-22',
+    duration: '1:58:45',
+    category: 'Education',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=9',
+    comments: []
+  },
+  {
+    videoId: 'vid10',
+    title: 'Docker Containerization Complete Guide',
+    uploader: 'DevOps Master',
+    description: 'Master Docker containers from basics to advanced. Learn Docker Compose, volumes, networking, and deployment best practices.',
+    views: 134000,
+    likes: 3100,
+    dislikes: 41,
+    uploadDate: '2023-12-20',
+    duration: '2:05:30',
+    category: 'Technology',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=10',
+    comments: []
+  },
+  {
+    videoId: 'vid11',
+    title: 'Cybersecurity Fundamentals 2024',
+    uploader: 'SecureCode',
+    description: 'Essential cybersecurity concepts every developer should know. Network security, encryption, and threat prevention strategies.',
+    views: 95000,
+    likes: 2700,
+    dislikes: 33,
+    uploadDate: '2023-12-18',
+    duration: '1:32:20',
+    category: 'Technology',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=11',
+    comments: []
+  },
+  {
+    videoId: 'vid12',
+    title: 'Game Development with Unity',
+    uploader: 'GameDev Studio',
+    description: 'Create your first 2D game with Unity. Learn C# scripting, physics, animations, and game mechanics from industry experts.',
+    views: 178000,
+    likes: 4500,
+    dislikes: 67,
+    uploadDate: '2023-12-15',
+    duration: '2:45:10',
+    category: 'Gaming',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4',
+    thumbnailUrl: 'https://storage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg',
+    uploaderAvatar: 'https://i.pravatar.cc/150?img=12',
+    comments: []
+  }
+];
